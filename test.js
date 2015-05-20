@@ -1,4 +1,4 @@
-var gutil = require('gulp-util')
+var File = require('vinyl')
 var assert = require('assert')
 var fs = require('fs')
 var _ = require('lodash')
@@ -35,7 +35,7 @@ describe('gulp-untar', function () {
 
       stream.pipe(assertOutput(done))
 
-      stream.write(new gutil.File({
+      stream.write(new File({
         path: './fixtures/test.tar',
         contents: fs.createReadStream('./fixtures/test.tar')
       }))
@@ -51,7 +51,7 @@ describe('gulp-untar', function () {
 
       stream.pipe(assertOutput(done))
 
-      stream.write(new gutil.File({
+      stream.write(new File({
         path: './fixtures/test.tar',
         contents: fs.readFileSync('./fixtures/test.tar')
       }))
@@ -69,7 +69,7 @@ describe('gulp-untar', function () {
         done()
       })
 
-      stream.write(new gutil.File({
+      stream.write(new File({
         path: './fixtures/test.tar',
         contents: null
       }))

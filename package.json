@@ -5,10 +5,10 @@
   "main": "index.js",
   "dependencies": {
     "event-stream": "~3.1.5",
-    "gulp-util": "~2.2.14",
-    "through2": "~0.4.1",
     "streamifier": "~0.1.0",
-    "tar": "~0.1.19"
+    "tar": "~0.1.19",
+    "through2": "~0.4.1",
+    "vinyl": "~0.4.6"
   },
   "devDependencies": {
     "mocha": "~1.18.2",
