@@ -1,6 +1,6 @@
 {
   "name": "gulp-untar2",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Extract tarballs in your gulp build pipeline",
   "main": "index.js",
   "dependencies": {
